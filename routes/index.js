@@ -8,6 +8,7 @@ const {
   confirm,
   paymentInfo,
   createPayment,
+  webhooks,
 } = require("../handlers");
 
 const router = express.Router();
@@ -22,5 +23,7 @@ router.post("/billing-requests/:id/collect-bank-account", collectBankDetails);
 router.post("/billing-requests/:id/confirm", confirm);
 router.post("/billing-requests/:id/fulfil", fulfil);
 router.get("/payment-info", paymentInfo);
+
+router.post("/webhooks", webhooks);
 
 module.exports = router;

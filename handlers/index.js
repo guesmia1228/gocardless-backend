@@ -117,6 +117,12 @@ const paymentInfo = async (req, res) => {
   });
 };
 
+const webhooks = async (req, res) => {
+  console.log(req.body);
+
+  return res.json("okay");
+}
+
 module.exports = {
   checkout,
   getBillingRequest,
@@ -125,4 +131,5 @@ module.exports = {
   confirm,
   fulfil,
   paymentInfo,
+  webhooks
 };
