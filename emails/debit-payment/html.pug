@@ -1,0 +1,59 @@
+div(style='background:#faf9f9;margin:0;padding:20px 0;font-family:Helvetica,"Helvetica Neue",Arial,sans-serif;text-align:center;width:100%!important;height:100%!important')
+  table(border='0', cellpadding='0', cellspacing='0', width='100%', align='center', style='border-collapse:collapse;margin:0;padding:0;background-color:#faf9f9;width:100%!important;line-height:100%!important')
+    tbody
+      tr
+        td(align='center', style='border-collapse:collapse;padding-left:9px;padding-right:9px;border-top-right-radius:16px')
+          table.m_-6817473576246454810responsive-table(width='550', border='0', cellspacing='0', cellpadding='0', style='border-collapse:collapse;width:600px')
+            tbody
+              tr
+                td(style='border-collapse:collapse;border-top-right-radius:16px')
+                  table(width='100%', border='0', cellspacing='0', cellpadding='0', style='border-collapse:collapse;border-collapse:separate;padding:0;border-radius:16px;background-color:#efeeec')
+                    tbody
+                      tr(height='48')
+                        td(style='border-collapse:collapse')
+                        td(style='border-collapse:collapse')
+                        td(style='border-collapse:collapse;border-top-right-radius:16px')
+                      tr
+                        td(width='55', style='border-collapse:collapse')
+                          div(style='width:55px')
+                        td(style='border-collapse:collapse')
+                          table(width='100%', border='0', cellspacing='0', cellpadding='0', style='border-collapse:collapse')
+                            tbody
+                              tr
+                                td(align='left', style='border-collapse:collapse;border-top-right-radius:16px')
+                                  p(style='margin:1em 0;line-height:24px;font-size:16px;margin-top:0;color:#1c1b18!important')
+                                    | Dear #{full_name},
+                                  h1(style='margin:0;font-weight:normal;font-size:20px;line-height:1.4em;font-size:24px;line-height:1.5em;margin-bottom:16px;color:#1c1b18!important')
+                                    strong #{creditor}
+                                    |  is charging you US$#{amount} for #{product}
+                                  p(style='margin:1em 0;line-height:24px;font-size:16px;color:#1c1b18!important')
+                                    | To confirm, the amount above is &quot;#{amount} United States Dollars&quot;.
+                                  p(style='margin:1em 0;line-height:24px;font-size:16px;color:#1c1b18!important')
+                                    | We will debit your bank account ******#{account_number_ending} (#{account_type} account) () by ACH Debit Authorization on or shortly after 
+                                    strong #{charge_date}
+                                    | .
+                                  p(style='margin:1em 0;line-height:24px;font-size:16px;color:#1c1b18!important')
+                                    | This payment will appear on your bank statement as 
+                                    strong
+                                      span.il GoCardless
+                                      | , ref: #{ref}
+                                    | .
+                                  p(style='margin:1em 0;line-height:24px;font-size:16px;color:#1c1b18!important')
+                                    | We will notify you via email at least 1 working days in advance of any changes to your payment date or amount.
+                                  p(style='margin:1em 0;line-height:24px;font-size:16px;color:#1c1b18!important') This notification was sent on #{created_date}.
+                        td(width='55', style='border-collapse:collapse;border-top-right-radius:16px')
+                          div(style='width:55px')
+                      tr
+                        td(width='55', style='border-collapse:collapse')
+                          div(style='width:55px')
+                        td(height='27', align='left', style='border-collapse:collapse')
+                        td(width='55', style='border-collapse:collapse;border-top-right-radius:16px')
+                          div(style='width:55px')
+              tr
+                td(style='border-collapse:collapse;border-top-right-radius:16px')
+                  table(width='100%', align='center', border='0', cellspacing='0', cellpadding='0', style='border-collapse:collapse;line-height:24px;font-size:12px;color:#545048!important')
+                    tbody
+                      tr
+                        td(align='center', style='border-collapse:collapse;border-top-right-radius:16px;padding-top:34px')
+                          div(style='padding-top:34px;font-size:12px;line-height:20px;color:#1c1b18;margin:0;padding:0;margin-bottom:27px')
+                            | Powered by&nbsp; GoCardless

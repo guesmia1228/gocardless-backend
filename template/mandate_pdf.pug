@@ -1,0 +1,50 @@
+#app(style='padding:40px')
+  h2(style='text-align:right;')
+    | ACH Debit Authorization
+  div(style='width:100%;display:flex;justify-content:space-between;margin-top:60px;')
+    div(style='width:48%;')
+      label
+        b Customer or Company name
+      br
+      div(style='padding:16px;border:2px solid lightgray;margin-top:4px') #{name}
+    div(style='width:48%;display:flex;justify-content:space-between')
+      div(style='width:48%;')
+        label
+          b Routing number
+        br
+        div(style='padding:16px;border:2px solid lightgray;margin-top:4px') *******
+      div(style='width:48%;')
+        label
+          b Account number
+        br
+        div(style='padding:16px;border:2px solid lightgray;margin-top:4px') ******#{account_number_ending}
+  div(style='width:100%;margin-top:16px')
+    label
+      b Name of Financial Institution
+    br
+    div(style='padding:16px;border:2px solid lightgray;margin-top:4px') &nbsp;
+  div(style='width:100%;display:flex;justify-content:space-between;margin-top:16px')
+    div(style='width:48%;')
+      label
+        b Name of account holder
+      br
+      div(style='padding:16px;border:2px solid lightgray;margin-top:4px') #{account_holder_name}
+    div(style='width:48%;')
+      label
+        b Account type
+      br
+      div(style='padding:16px;border:2px solid lightgray;margin-top:4px') #{account_type}
+  
+  div(style='width:100%;display:flex;justify-content:space-between;margin-top:16px;margin-top:60px')
+    div(style='width:48%;')
+      label
+        b Date
+      br
+      div(style='padding:16px;border:2px solid lightgray;margin-top:4px') #{date}
+    
+    if ip_address
+      div(style='width:48%;')
+        label
+          b IP Address
+        br
+        div(style='padding:16px;border:2px solid lightgray;margin-top:4px') #{ip_address}
